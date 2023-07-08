@@ -25,7 +25,7 @@ class AddNoteButton extends StatelessWidget {
               Hint: "Content",
             ),
             SizedBox(
-              height: 20,
+              height: 50,
             ),
             CustomButton(),
             SizedBox(
