@@ -48,7 +48,7 @@ class Note_View_itme extends StatelessWidget {
               child: Text(
                 "May21 , 2022",
                 style: TextStyle(
-                  color: Colors.black,
+                  color: Colors.black.withOpacity(0.5),
                 ),
               ),
             ),
