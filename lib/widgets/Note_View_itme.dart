@@ -7,7 +7,7 @@ class Note_View_itme extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(top: 20, bottom: 20, left: 18),
+      padding: EdgeInsets.only(top: 18, bottom: 18, left: 18),
       decoration: BoxDecoration(
         color: Color(0xffFFCC80),
         borderRadius: BorderRadius.circular(16),
@@ -24,7 +24,7 @@ class Note_View_itme extends StatelessWidget {
               ),
             ),
             subtitle: Padding(
-              padding: const EdgeInsets.only(top: 16, bottom: 14),
+              padding: const EdgeInsets.only(top: 14, bottom: 12),
               child: Text(
                 "Bulid your career with Mahmoud Ali",
                 style: TextStyle(
