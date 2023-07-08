@@ -11,7 +11,7 @@ class note_view_body extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(
-            height: 25,
+            height: 24,
           ),
           CustomerAppBar(),
           Expanded(child: Container(
