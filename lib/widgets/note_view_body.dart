@@ -33,6 +33,7 @@ class Note_View_itme extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           ListTile(
             title: Text(
@@ -54,6 +55,12 @@ class Note_View_itme extends StatelessWidget {
                   color: Colors.black,
                   size: 28,
                 )),
+          ),
+          Text(
+            "May21 , 2022",
+            style: TextStyle(
+              color: Colors.black,
+            ),
           ),
         ],
       ),
