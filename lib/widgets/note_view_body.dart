@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:last_pro/widgets/CustomAppbar.dart';
 import 'package:last_pro/widgets/Note_View_itme.dart';
+import 'package:last_pro/widgets/notelist.dart';
 
 class note_view_body extends StatelessWidget {
   const note_view_body({super.key});
@@ -14,12 +15,9 @@ class note_view_body extends StatelessWidget {
             height: 25,
           ),
           CustomerAppBar(),
-          Expanded(child: Container(
-            child: ListView.builder(
-              itemBuilder: (context, index) {
-                return Note_View_itme();
-              },
-            ),
+          Expanded(
+              child: Container(
+            child: noteList(),
           )),
         ],
       ),
