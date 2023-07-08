@@ -28,6 +28,7 @@ class Note_View_itme extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(top: 24, bottom: 24, left: 21),
       decoration: BoxDecoration(
         color: Color(0xffFFCC80),
         borderRadius: BorderRadius.circular(16),
@@ -39,13 +40,18 @@ class Note_View_itme extends StatelessWidget {
             title: Text(
               "Flutter Tips",
               style: TextStyle(
+                fontSize: 22,
                 color: Colors.black,
               ),
             ),
-            subtitle: Text(
-              "Bulid your career with Mahmoud Ali",
-              style: TextStyle(
-                color: Colors.black,
+            subtitle: Padding(
+              padding: const EdgeInsets.only(top: 16, bottom: 14),
+              child: Text(
+                "Bulid your career with Mahmoud Ali",
+                style: TextStyle(
+                  fontSize: 14,
+                  color: Colors.black,
+                ),
               ),
             ),
             trailing: IconButton(
@@ -53,13 +59,16 @@ class Note_View_itme extends StatelessWidget {
                 icon: Icon(
                   FontAwesomeIcons.trash,
                   color: Colors.black,
-                  size: 28,
+                  size: 24,
                 )),
           ),
-          Text(
-            "May21 , 2022",
-            style: TextStyle(
-              color: Colors.black,
+          Padding(
+            padding: const EdgeInsets.only(right: 16),
+            child: Text(
+              "May21 , 2022",
+              style: TextStyle(
+                color: Colors.black,
+              ),
             ),
           ),
         ],
