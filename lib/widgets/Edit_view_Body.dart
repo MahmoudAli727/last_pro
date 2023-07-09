@@ -30,6 +30,7 @@ class Edit_view_Body extends StatelessWidget {
           ),
           CustomTextField(
             Hint: "Content",
+            maxlines: 5,
           ),
           SizedBox(
             height: 50,

@@ -23,6 +23,7 @@ class AddNoteButton extends StatelessWidget {
             ),
             CustomTextField(
               Hint: "Content",
+              maxlines: 5,
             ),
             SizedBox(
               height: 50,
