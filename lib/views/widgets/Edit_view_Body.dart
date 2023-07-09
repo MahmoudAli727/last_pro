@@ -30,7 +30,9 @@ class Edit_view_Body extends StatelessWidget {
         SizedBox(
           height: 200,
         ),
-        CustomButton(),
+        CustomButton(
+          ontap: () {},
+        ),
       ])),
     );
   }

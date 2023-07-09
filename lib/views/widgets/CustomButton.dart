@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:last_pro/const.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key});
-
+  const CustomButton({super.key, required this.ontap});
+  final void Function()? ontap;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: ontap,
       child: Container(
         alignment: Alignment.center,
         width: MediaQuery.of(context).size.width,
@@ -20,7 +21,6 @@ class CustomButton extends StatelessWidget {
           style: TextStyle(color: Colors.black, fontSize: 16),
         ),
       ),
-      onTap: () {},
     );
   }
 }
