@@ -13,7 +13,10 @@ class note_view_body extends StatelessWidget {
           SizedBox(
             height: 25,
           ),
-          CustomerAppBar(),
+          CustomerAppBar(
+            text: "Notes",
+            icon: Icons.search,
+          ),
           Expanded(
               child: Container(
             child: noteList(),

@@ -14,7 +14,10 @@ class Edit_view_Body extends StatelessWidget {
         SizedBox(
           height: 25,
         ),
-        CustomerAppBar(),
+        CustomerAppBar(
+          text: "Edit Note",
+          icon: Icons.check,
+        ),
         SizedBox(
           height: 20,
         ),
