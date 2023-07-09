@@ -10,34 +10,36 @@ class Edit_view_Body extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24),
-      child: Column(children: [
-        SizedBox(
-          height: 25,
-        ),
-        CustomerAppBar(
-          text: "Edit Note",
-          icon: Icons.check,
-        ),
-        SizedBox(
-          height: 20,
-        ),
-        CustomTextField(
-          Hint: "Text",
-        ),
-        SizedBox(
-          height: 10,
-        ),
-        CustomTextField(
-          Hint: "Content",
-        ),
-        SizedBox(
-          height: 50,
-        ),
-        CustomButton(),
-        SizedBox(
-          height: 10,
-        )
-      ]),
+      child: SingleChildScrollView(
+        child: Column(children: [
+          SizedBox(
+            height: 25,
+          ),
+          CustomerAppBar(
+            text: "Edit Note",
+            icon: Icons.check,
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          CustomTextField(
+            Hint: "Text",
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          CustomTextField(
+            Hint: "Content",
+          ),
+          SizedBox(
+            height: 50,
+          ),
+          CustomButton(),
+          SizedBox(
+            height: 10,
+          )
+        ]),
+      ),
     );
   }
 }
