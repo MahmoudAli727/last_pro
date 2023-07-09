@@ -13,7 +13,7 @@ class Edit_view_Body extends StatelessWidget {
       child: SingleChildScrollView(
           child: Column(children: [
         SizedBox(
-          height: 25,
+          height: 30,
         ),
         CustomerAppBar(text: "Edit Not", icon: Icons.search),
         SizedBox(
