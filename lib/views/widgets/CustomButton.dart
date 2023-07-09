@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:last_pro/const.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({super.key});
@@ -12,7 +13,7 @@ class CustomButton extends StatelessWidget {
         height: 45,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          color: const Color.fromARGB(255, 64, 255, 86),
+          color: kPrimaryColor,
         ),
         child: Text(
           "Add",
