@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:last_pro/widgets/Custom_Icon.dart';
+import 'package:last_pro/views/widgets/Custom_Icon.dart';
 
 class CustomerAppBar extends StatelessWidget {
   const CustomerAppBar({super.key, required this.text, required this.icon});
