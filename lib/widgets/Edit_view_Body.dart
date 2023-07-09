@@ -33,12 +33,9 @@ class Edit_view_Body extends StatelessWidget {
             maxlines: 5,
           ),
           SizedBox(
-            height: 50,
+            height: 200,
           ),
           CustomButton(),
-          SizedBox(
-            height: 10,
-          )
         ]),
       ),
     );
