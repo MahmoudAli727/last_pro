@@ -16,12 +16,12 @@ class AddNoteButton extends StatelessWidget {
             print("failed ${state.err}");
           }
           if (state is AddNotesCubitSuccess) {
-            Navigator.pop(context);
+            // Navigator.pop(context);
           }
         },
         builder: (context, state) {
           return AbsorbPointer(
-            absorbing: state is AddNotesCubitLoading ? true : false,
+            absorbing: state is AddNotesCubitLoading,
             child: const Padding(
               padding: EdgeInsets.symmetric(horizontal: 16),
               child: SingleChildScrollView(child: AddNoteForm()),

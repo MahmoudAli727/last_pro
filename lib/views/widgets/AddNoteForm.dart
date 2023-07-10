@@ -16,6 +16,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
   final GlobalKey<FormState> formKey = GlobalKey();
   String? title, SubTitle;
   AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
+
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -48,7 +49,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
           BlocBuilder<AddNotesCubit, AddNotesCubitState>(
               builder: (context, state) {
             return CustomButton(
-              isLoading: state is AddNotesCubitLoading ? true : false,
+              isLoading: state is AddNotesCubitLoading,
               ontap: () {
                 if (formKey.currentState!.validate()) {
                   formKey.currentState!.save();
