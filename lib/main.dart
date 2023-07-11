@@ -12,11 +12,12 @@ void main() async {
   Hive.registerAdapter(notesmodelAdapter());
   await Hive.openBox<notes_model>(kNotesBox);
   Bloc.observer = SimpleBlocObserver();
-  runApp(const note_app());
+  runApp(const Note_App());
 }
 
-class note_app extends StatelessWidget {
-  const note_app({super.key});
+// ignore: camel_case_types
+class Note_App extends StatelessWidget {
+  const Note_App({super.key});
 
   // This widget is the root of your application.
   @override

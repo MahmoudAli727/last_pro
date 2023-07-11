@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_typing_uninitialized_variables, file_names
+
 import 'package:flutter/material.dart';
 import 'package:last_pro/views/widgets/Custom_Icon.dart';
 
@@ -13,9 +15,9 @@ class CustomerAppBar extends StatelessWidget {
       children: [
         Text(
           text,
-          style: TextStyle(fontSize: 28),
+          style: const TextStyle(fontSize: 28),
         ),
-        Spacer(),
+        const Spacer(),
         Custom_Icon(
           onPressed: onPressed,
           icon: icon,

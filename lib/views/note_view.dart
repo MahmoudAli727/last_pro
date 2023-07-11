@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:last_pro/views/widgets/AddNoteButton.dart';
 import 'package:last_pro/views/widgets/note_view_body.dart';
@@ -17,13 +19,13 @@ class Note_views extends StatelessWidget {
             ),
             context: context,
             builder: (context) {
-              return AddNoteButton();
+              return const AddNoteButton();
             },
           );
         },
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
-      body: note_view_body(),
+      body: const note_view_body(),
     );
   }
 }

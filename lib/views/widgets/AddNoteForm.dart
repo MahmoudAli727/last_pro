@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names, file_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
@@ -56,7 +58,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
                   formKey.currentState!.save();
                   var Curruntdate = DateTime.now();
                   var FormatCurruntdate =
-                      DateFormat("dd-mm-yyyy").format(Curruntdate);
+                      DateFormat("dd-MM-yyyy").format(Curruntdate);
                   var noteModel = notes_model(
                       title: title!,
                       Subtitle: SubTitle!,
@@ -70,7 +72,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
               },
             );
           }),
-          SizedBox(
+          const SizedBox(
             height: 10,
           )
         ],

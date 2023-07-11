@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -21,7 +23,7 @@ class Note_View_itme extends StatelessWidget {
         ));
       },
       child: Container(
-        padding: EdgeInsets.only(top: 18, bottom: 18, left: 18),
+        padding: const EdgeInsets.only(top: 18, bottom: 18, left: 18),
         decoration: BoxDecoration(
           color: Color(note.color),
           borderRadius: BorderRadius.circular(16),
@@ -32,7 +34,7 @@ class Note_View_itme extends StatelessWidget {
             ListTile(
               title: Text(
                 note.title,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 22,
                   color: Colors.black,
                 ),
@@ -52,7 +54,7 @@ class Note_View_itme extends StatelessWidget {
                     note.delete();
                     BlocProvider.of<NotesCubit>(context).fetchNotes();
                   },
-                  icon: Icon(
+                  icon: const Icon(
                     FontAwesomeIcons.trash,
                     color: Colors.black,
                     size: 24,

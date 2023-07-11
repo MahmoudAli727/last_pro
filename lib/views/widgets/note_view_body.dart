@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types, avoid_unnecessary_containers
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:last_pro/Cubit/notes/notes_cubit.dart';
@@ -24,16 +26,16 @@ class _note_view_bodyState extends State<note_view_body> {
       padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
-          CustomerAppBar(
+          const CustomerAppBar(
             text: "Notes",
             icon: Icons.search,
           ),
           Expanded(
               child: Container(
-            child: noteList(),
+            child: const noteList(),
           )),
         ],
       ),

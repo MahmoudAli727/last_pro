@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, camel_case_types, prefer_typing_uninitialized_variables
+
 import 'package:flutter/material.dart';
 
 class Custom_Icon extends StatelessWidget {

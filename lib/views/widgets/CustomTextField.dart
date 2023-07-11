@@ -1,9 +1,11 @@
+// ignore_for_file: file_names, non_constant_identifier_names
+
 import 'package:flutter/material.dart';
 import 'package:last_pro/const.dart';
 
 // ignore: must_be_immutable
 class CustomTextField extends StatelessWidget {
-  CustomTextField(
+  const CustomTextField(
       {super.key,
       this.onChanged,
       required this.Hint,
@@ -36,6 +38,7 @@ class CustomTextField extends StatelessWidget {
   }
 
   OutlineInputBorder outlinebordernote() {
-    return OutlineInputBorder(borderSide: BorderSide(color: Colors.white));
+    return const OutlineInputBorder(
+        borderSide: BorderSide(color: Colors.white));
   }
 }
