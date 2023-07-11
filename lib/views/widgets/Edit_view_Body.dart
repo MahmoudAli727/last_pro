@@ -6,6 +6,7 @@ import 'package:last_pro/Cubit/notes/notes_cubit.dart';
 import 'package:last_pro/models/notes_model.dart';
 import 'package:last_pro/views/widgets/CustomAppbar.dart';
 import 'package:last_pro/views/widgets/CustomTextField.dart';
+import 'package:last_pro/views/widgets/EditColorlist.dart';
 
 class Edit_view_Body extends StatefulWidget {
   const Edit_view_Body({
@@ -60,8 +61,11 @@ class _Edit_view_BodyState extends State<Edit_view_Body> {
           maxlines: 5,
         ),
         const SizedBox(
-          height: 200,
+          height: 20,
         ),
+        EditColors_list(
+          note: widget.note,
+        )
       ])),
     );
   }
