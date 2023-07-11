@@ -23,7 +23,11 @@ class Note_View_itme extends StatelessWidget {
         ));
       },
       child: Container(
-        padding: const EdgeInsets.only(top: 18, bottom: 18, left: 18),
+        padding: const EdgeInsets.only(
+          top: 18,
+          bottom: 18,
+          left: 18,
+        ),
         decoration: BoxDecoration(
           color: Color(note.color),
           borderRadius: BorderRadius.circular(16),

@@ -29,9 +29,10 @@ class _note_view_bodyState extends State<note_view_body> {
           const SizedBox(
             height: 30,
           ),
-          const CustomerAppBar(
+          CustomerAppBar(
             text: "Notes",
             icon: Icons.search,
+            onPressed: () {},
           ),
           Expanded(
               child: Container(
