@@ -1,9 +1,10 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:last_pro/Cubit/notes/notes_cubit.dart';
 
 import 'package:last_pro/models/notes_model.dart';
 import 'package:last_pro/views/widgets/CustomAppbar.dart';
-import 'package:last_pro/views/widgets/CustomButton.dart';
 import 'package:last_pro/views/widgets/CustomTextField.dart';
 
 class Edit_view_Body extends StatefulWidget {
@@ -25,28 +26,40 @@ class _Edit_view_BodyState extends State<Edit_view_Body> {
       padding: const EdgeInsets.symmetric(horizontal: 24),
       child: SingleChildScrollView(
           child: Column(children: [
-        SizedBox(
+        const SizedBox(
           height: 30,
         ),
-        CustomerAppBar(text: "Edit Not", icon: Icons.search),
-        SizedBox(
+        CustomerAppBar(
+          text: "Edit Not",
+          icon: Icons.check,
+          onPressed: () {
+            widget.note.title = title ?? widget.note.title;
+            widget.note.Subtitle = Content ?? widget.note.Subtitle;
+            Navigator.pop(context);
+            BlocProvider.of<NotesCubit>(context).fetchNotes();
+          },
+        ),
+        const SizedBox(
           height: 20,
         ),
         CustomTextField(
           Hint: "Text",
+          onChanged: (p0) {
+            title = p0;
+          },
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         CustomTextField(
           Hint: "Content",
+          onChanged: (p0) {
+            Content = p0;
+          },
           maxlines: 5,
         ),
-        SizedBox(
+        const SizedBox(
           height: 200,
-        ),
-        CustomButton(
-          ontap: () {},
         ),
       ])),
     );

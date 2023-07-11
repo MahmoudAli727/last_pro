@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:last_pro/views/widgets/Custom_Icon.dart';
 
 class CustomerAppBar extends StatelessWidget {
-  const CustomerAppBar({super.key, required this.text, required this.icon});
+  const CustomerAppBar(
+      {super.key, required this.text, required this.icon, this.onPressed});
   final String text;
   final icon;
+  final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -15,6 +17,7 @@ class CustomerAppBar extends StatelessWidget {
         ),
         Spacer(),
         Custom_Icon(
+          onPressed: onPressed,
           icon: icon,
         ),
       ],
