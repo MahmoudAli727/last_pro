@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:last_pro/Cubit/addNote/add_notes_cubit_cubit.dart';
-import 'package:last_pro/Cubit/cubit/notes_cubit.dart';
+import 'package:last_pro/Cubit/notes/notes_cubit.dart';
 import 'package:last_pro/views/widgets/AddNoteForm.dart';
 
 class AddNoteButton extends StatelessWidget {

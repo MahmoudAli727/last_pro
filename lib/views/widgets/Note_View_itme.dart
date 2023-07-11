@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:last_pro/Cubit/cubit/notes_cubit.dart';
+import 'package:last_pro/Cubit/notes/notes_cubit.dart';
 import 'package:last_pro/models/notes_model.dart';
 import 'package:last_pro/views/Edit_view.dart';
 
@@ -14,7 +14,9 @@ class Note_View_itme extends StatelessWidget {
       onTap: () {
         Navigator.push(context, MaterialPageRoute(
           builder: (context) {
-            return Edit_view();
+            return Edit_view(
+              note: note,
+            );
           },
         ));
       },
