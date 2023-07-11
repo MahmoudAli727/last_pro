@@ -11,7 +11,7 @@ class CustomTextField extends StatelessWidget {
       this.onSaved});
   final String Hint;
   final int maxlines;
-  void Function(String)? onChanged;
+  final Function(String)? onChanged;
   final void Function(String?)? onSaved;
   @override
   Widget build(BuildContext context) {

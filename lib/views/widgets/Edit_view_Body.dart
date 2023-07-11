@@ -35,6 +35,7 @@ class _Edit_view_BodyState extends State<Edit_view_Body> {
           onPressed: () {
             widget.note.title = title ?? widget.note.title;
             widget.note.Subtitle = Content ?? widget.note.Subtitle;
+            widget.note.save();
             Navigator.pop(context);
             BlocProvider.of<NotesCubit>(context).fetchNotes();
           },
@@ -43,7 +44,7 @@ class _Edit_view_BodyState extends State<Edit_view_Body> {
           height: 20,
         ),
         CustomTextField(
-          Hint: "Text",
+          Hint: widget.note.title,
           onChanged: (p0) {
             title = p0;
           },
@@ -52,7 +53,7 @@ class _Edit_view_BodyState extends State<Edit_view_Body> {
           height: 10,
         ),
         CustomTextField(
-          Hint: "Content",
+          Hint: widget.note.Subtitle,
           onChanged: (p0) {
             Content = p0;
           },
